@@ -1,13 +1,7 @@
-// Declaring variables
+// Const Values
 
-let name = 'Fernando';
-console.log(name);
+const interestRate = 0.3;
+interestRate = 1;
+console.log(interestRate);
 
-// Cannot be a reserved keyword
-// Should be meaningful
-// Cannot start with a number
-// Cannot contain a space or hyphen
-
-// Long variables labels should use CamelNotation (let firstName)
-
-
+// Const values cannot be change
