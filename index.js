@@ -1,34 +1,19 @@
-// Functions
+// Operators
 
-/*
-function greet() {
-    console.log('Hello world');
-}
+// Arithmetic Operators
 
-// Now we call it:
-greet();
+let x = 10;
+let y = 3;
 
-*/
+console.log(x + y); // Addition operator
+console.log(x - y); // Subtraction operator
+console.log(x * y); // Multiplication operator
+console.log(x / y); // Division operator
+console.log(x % y); // Module operator
+console.log(x ** y); // Power operator
 
-/*function greet(name) { // Parameters
-    console.log('Hello ' + name);
-}
+// Increment (++)
+console.log(++x);
 
-greet('John'); // arguments
-greet('Mary');*/
-
-// Performing a Task
-function greet(name, lastName) { // Parameters
-    console.log('Hello ' + name + ' ' + lastName);
-}
-
-greet('John', 'Smith'); // arguments
-greet('Mary');
-
-// Calculating a value
-
-function square(number) {
-    return number * number
-}
-console.log(square(2));
-
+// Decrement (--)
+console.log(--x);
