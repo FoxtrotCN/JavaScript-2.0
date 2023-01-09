@@ -1,19 +1,26 @@
-// Arrays
+// Functions
 
-let selectedColors = ['red', 'blue']; // Array literal
-console.log(selectedColors);
+/*
+function greet() {
+    console.log('Hello world');
+}
 
-// Accessing elements in the array, the key: its index
+// Now we call it:
+greet();
 
-console.log(selectedColors[0]);
-console.log(selectedColors[1]);
+*/
 
-// Adding elements to the array
+/*function greet(name) { // Parameters
+    console.log('Hello ' + name);
+}
 
-selectedColors[2] = 'green';
-console.log(selectedColors);
-console.log(typeof (selectedColors)); // Object
+greet('John'); // arguments
+greet('Mary');*/
 
-// Length of the array
+function greet(name, lastName) { // Parameters
+    console.log('Hello ' + name + ' ' + lastName);
+}
 
-console.log(selectedColors.length);
+greet('John', 'Smith'); // arguments
+greet('Mary');
+
