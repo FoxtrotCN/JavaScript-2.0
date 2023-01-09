@@ -1,11 +1,20 @@
 // Operators
 
-// Assignments Operators
+// Comparison Operators
 
 let x = 5;
 
-x += 5;
-console.log(x);
+//Relational
+console.log(x > 10);
+console.log(x < 10);
+console.log(x <= 10);
+console.log(x >= 10);
 
-x *= 5;
-console.log(x);
+
+//Equality
+console.log(x == 10);
+console.log(x === 10);
+
+// Not Equal
+console.log(x !== 10);
+
