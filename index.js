@@ -1,15 +1,34 @@
 // Operators
 
-// Ternary operator
+// Logical Operator
+// AND / OR / NOT
 
-// If a customer has more than 100 points,
-// they are a 'gold' customer, otherwise,
-// they are a 'silver' customer.
+// AND &&: return true if both operands are TRUE
 
-let points = 110;
-let type = points > 100 ? 'gold' : 'silver';
+/*let higIncome = true;
+let goodCreditScore = true;
+let elegibleForloan = higIncome && goodCreditScore;
 
-console.log(type);
+console.log(elegibleForloan);*/
+
+// OR ||: Returns True if one operand is TRUE
+
+/*let higIncome = true;
+let goodCreditScore = false;
+let elegibleForloan = higIncome || goodCreditScore;
+
+console.log(elegibleForloan);*/
+
+// NOT !: Change the operand value
+
+let higIncome = false;
+let goodCreditScore = false;
+let elegibleForloan = higIncome || goodCreditScore;
+console.log('Elegible: ' + elegibleForloan);
+
+let applicationRefused = !elegibleForloan;
+console.log('Refused: ' + applicationRefused);
+
 
 
 
