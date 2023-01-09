@@ -1,38 +1,19 @@
-// Primitive / Value Types
-/*
-* Strings
-* Numbers
-* Booleans
-* Undefined
-* Null
- */
+// Arrays
 
-let name = 'Fernan'; //String Literal
-let age = 30; //Number Literal
-let isApproved = true; // Boolean Literal
-let firstName; // By default is undefined
-let selectedColor = null; // We use it in situations we want to clear the value of a variable
+let selectedColors = ['red', 'blue']; // Array literal
+console.log(selectedColors);
 
+// Accessing elements in the array, the key: its index
 
-// Reference Type (OBJECTS)
+console.log(selectedColors[0]);
+console.log(selectedColors[1]);
 
-let person = {
-    name: 'Fernan',
-    age: 22
-};
+// Adding elements to the array
 
-// Dot notation to access the elements
-person.name = 'John';
-person.age = 25;
+selectedColors[2] = 'green';
+console.log(selectedColors);
+console.log(typeof (selectedColors)); // Object
 
-// Bracket notation
-person['name'] = 'Mary';
+// Length of the array
 
-console.log(person);
-
-// Dynamic way
-
-let userSelection = 'name';
-
-person[userSelection] = 'Peter';
-console.log(person);
+console.log(selectedColors.length);
