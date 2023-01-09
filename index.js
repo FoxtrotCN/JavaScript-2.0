@@ -1,15 +1,15 @@
 // Operators
 
-// Equality operator
+// Ternary operator
 
-// Strict Equality (type + value must be equal)
+// If a customer has more than 100 points,
+// they are a 'gold' customer, otherwise,
+// they are a 'silver' customer.
 
-console.log(1 === 1);
-console.log(1 === '1'); // throws false
+let points = 110;
+let type = points > 100 ? 'gold' : 'silver';
 
-// Lose equality
-console.log(1 == 1);
-console.log(1 == '1'); // throws true
+console.log(type);
 
 
 
