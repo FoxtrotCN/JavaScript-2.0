@@ -1,19 +1,11 @@
 // Operators
 
-// Arithmetic Operators
+// Assignments Operators
 
-let x = 10;
-let y = 3;
+let x = 5;
 
-console.log(x + y); // Addition operator
-console.log(x - y); // Subtraction operator
-console.log(x * y); // Multiplication operator
-console.log(x / y); // Division operator
-console.log(x % y); // Module operator
-console.log(x ** y); // Power operator
+x += 5;
+console.log(x);
 
-// Increment (++)
-console.log(++x);
-
-// Decrement (--)
-console.log(--x);
+x *= 5;
+console.log(x);
