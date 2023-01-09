@@ -1,20 +1,15 @@
 // Operators
 
-// Comparison Operators
+// Equality operator
 
-let x = 5;
+// Strict Equality (type + value must be equal)
 
-//Relational
-console.log(x > 10);
-console.log(x < 10);
-console.log(x <= 10);
-console.log(x >= 10);
+console.log(1 === 1);
+console.log(1 === '1'); // throws false
+
+// Lose equality
+console.log(1 == 1);
+console.log(1 == '1'); // throws true
 
 
-//Equality
-console.log(x == 10);
-console.log(x === 10);
-
-// Not Equal
-console.log(x !== 10);
 
