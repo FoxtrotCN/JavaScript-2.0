@@ -4,13 +4,12 @@
 // of the two.
 
 function maximumOfTwo(num1, num2) {
-    if (num1 > num2) console.log(`${num1} es mayor`);
-    else console.log(`${num2} es mayor`);
+    return (num1 > num2) ? num1 : num2;
 }
 
-maximumOfTwo(2, 1);
-maximumOfTwo(1, 3);
-maximumOfTwo(4, 3);
+let attempt1 = maximumOfTwo(2, 1);
+console.log(attempt1);
+
 
 
 
