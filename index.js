@@ -48,3 +48,28 @@ do {
     if (i % 2 !== 0) console.log(i);
     i++;
 } while (i <= 100)
+
+
+// for...in: used to iterate over the properties of an object
+// or the elements in an array
+
+const person = {
+    name: 'Fernan',
+    age: 22
+};
+
+for (let key in person)
+    console.log(key, person[key]);
+
+const colors = ['red', 'green', 'blue'];
+
+for (let index in colors)
+    console.log(index, colors[index]);
+
+// for...of
+
+for (let color of colors)
+    console.log(color);
+
+
+
