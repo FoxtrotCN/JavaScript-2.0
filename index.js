@@ -31,14 +31,20 @@ for (let i = 100; i >= 1; i--) {
 // statement
 // }
 
+//
+// let i = 0;
+//
+// while (i <= 100) {
+//     if (i % 2 !== 0) console.log(i);
+//     i++;
+//
+// }
+
+// do...while
 
 let i = 0;
 
-while (i <= 100) {
+do {
     if (i % 2 !== 0) console.log(i);
     i++;
-
-}
-
-
-
+} while (i <= 100)
