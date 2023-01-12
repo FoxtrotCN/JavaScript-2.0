@@ -15,8 +15,14 @@ for (let i = 0; i < 5; i++) {
 // to retrieve the division reminder
 
 for (let i = 1; i <= 100; i++) {
-    if (i % 2 !== 0)
-        console.log(i);
+    if (i % 2 !== 0) console.log(i);
+
 }
 
+console.log('-----------------------------')
+
+for (let i = 100; i >= 1; i--) {
+    if (i % 2 !== 0) console.log(i);
+
+}
 
