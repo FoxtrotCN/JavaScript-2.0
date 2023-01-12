@@ -26,3 +26,19 @@ for (let i = 100; i >= 1; i--) {
 
 }
 
+// The same logic of above.... with WHILE Loop
+// while (condition) {
+// statement
+// }
+
+
+let i = 0;
+
+while (i <= 100) {
+    if (i % 2 !== 0) console.log(i);
+    i++;
+
+}
+
+
+
