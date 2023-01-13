@@ -69,6 +69,45 @@ function fizzBuzz(input) {
 
 }
 
+// 4 - Speed limit
+
+/* We must implement a function that checks the speed limit of a car */
+
+// Speed limit = 70
+// For every 5 kms above the speed limit the user gain 1 point 5 -> 1 point
+// for that, we can use Math.floor() method
+// More than 12 points -> License suspended
+
+
+
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+    const maxPointsPermitted = 12;
+
+    if (speed <= speedLimit || speed <= 74)
+        return 'Ok';
+    else {
+        const points = Math.floor((speed - speedLimit) / kmPerPoint);
+        if (points >= maxPointsPermitted)
+            return `License Suspended`
+        return `Points: ${points}`
+
+    }
+
+    // if (speed < speedLimit + kmPerPoint) {
+    //     return 'Ok';
+    // }
+    // const points = Math.floor((speed - speedLimit) / kmPerPoint);
+    // if (points >= maxPointsPermitted)
+    //     return `License Suspended`
+    // else
+    //     return `Points: ${points}`
+
+}
+
+let car = checkSpeed(70);
+console.log(car);
 
 
 
