@@ -109,6 +109,24 @@ function checkSpeed(speed) {
 let car = checkSpeed(70);
 console.log(car);
 
+// 5 - Show Odd and Even numbers
+
+/* We must implement a function that takes a parameter as a limit, and it has
+*  to return the Odd and Even number has given  */
+
+showNumbers(10);
+
+
+function showNumbers(limit) {
+
+    for (let n = 0; n <= limit; n++) {
+
+        const value = (n % 2 === 0) ? `${n} "EVEN"` : `${n} "ODD"`;
+
+        console.log(value);
+    }
+}
+
 
 
 
