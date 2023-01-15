@@ -144,4 +144,26 @@ function countTruthy(array) {
     return count;
 }
 
+// 7 - String Properties
+
+/* In this exercise we must implement a function that
+   shows the string properties of an object */
+
+
+const movie = {
+  title: 'a',
+  releaseYear: 2020,
+  rating: 4.5,
+  director: 'b'
+};
+
+showProperties(movie);
+
+function showProperties(movie) {
+    for (let keyString in movie) {
+        if (typeof movie[keyString] === "string")
+            console.log(`${keyString} ${movie[keyString]}`);
+    }
+}
+
 
