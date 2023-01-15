@@ -127,6 +127,21 @@ function showNumbers(limit) {
     }
 }
 
+// 6 - Truthy or Falsy values
 
+/* In this exercise we must implement a function that determines the
+*  quantity of elements in an array that are truthy  */
+
+const array = ['', null, undefined, 0, 1, 2, 3, 'Licey Campeon'];
+console.log((countTruthy(array)));
+
+function countTruthy(array) {
+
+    let count = 0;
+    for (let value of array)
+        if (value)
+            count++;
+    return count;
+}
 
 
