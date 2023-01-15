@@ -184,3 +184,41 @@ function sum(limit) {
 
 }
 
+// 9 - Grade
+
+/* We must implement a function that calculate
+*  the average of grades of a student */
+
+// Average = ?
+
+// 1-59: F
+// 60-69: D
+// 70-79: C
+// 80-89: B
+// 90-100: A
+
+const marks = [90, 90, 90];
+
+console.log(calculateGrade(marks));
+
+function calculateGrade(marks) {
+    let average = 0;
+    for (let i = 0; i < marks.length ; i++) {
+        average += Math.floor(marks[i] / marks.length);
+    }
+
+    if (average > 1 && average <= 59)
+        return 'F';
+    else if (average > 59 && average <= 69)
+        return 'D';
+    else if (average > 69 && average <= 79)
+        return 'C';
+    else if (average > 79 && average <= 89)
+        return 'B';
+    else if (average > 89 && average <= 100)
+        return 'A';
+
+    console.log(average);
+}
+
+
