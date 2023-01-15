@@ -206,19 +206,16 @@ function calculateGrade(marks) {
     for (let i = 0; i < marks.length ; i++) {
         average += Math.floor(marks[i] / marks.length);
     }
-
-    if (average > 1 && average <= 59)
-        return 'F';
-    else if (average > 59 && average <= 69)
-        return 'D';
-    else if (average > 69 && average <= 79)
-        return 'C';
-    else if (average > 79 && average <= 89)
-        return 'B';
-    else if (average > 89 && average <= 100)
-        return 'A';
-
     console.log(average);
+
+    if (average < 60) return 'F';
+    if (average < 70) return 'D';
+    if (average < 80) return 'C';
+    if (average < 90) return 'B';
+    if (average <= 100) return 'A';
+
+
+
 }
 
 
