@@ -167,3 +167,20 @@ function showProperties(movie) {
 }
 
 
+// 8 - Multiples 3 and 5 from 0 to a limit
+
+console.log(sum(10));
+
+function sum(limit) {
+    let sum = 0;
+
+    for (let n = 0; n <= limit; n++)
+        if (n % 3 === 0 || n % 5 === 0)
+            sum += n;
+
+    return sum;
+
+
+
+}
+
