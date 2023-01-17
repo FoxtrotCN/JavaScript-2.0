@@ -103,9 +103,13 @@ console.log(anotherCircle);
 
 // Not so older
 
-const another = Object.assign({
+/* const another = Object.assign({
     color: 'Blue'
 }, circle);
 
-console.log(another);
+console.log(another); */
 
+// Moder way (spread operator ...)
+
+const another = {...circle};
+console.log(another);
