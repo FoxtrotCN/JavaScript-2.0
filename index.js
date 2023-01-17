@@ -100,3 +100,12 @@ for (let key in circle) {
 }
 
 console.log(anotherCircle);
+
+// Not so older
+
+const another = Object.assign({
+    color: 'Blue'
+}, circle);
+
+console.log(another);
+
