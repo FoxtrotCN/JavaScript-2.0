@@ -48,15 +48,47 @@ const circle3 = new Circle(2);
 
 // The dynamic nature of objects
 
-const circle = {
-    radius: 1
-};
+// const circle = {
+//     radius: 1,
+//     draw() {
+//         console.log('Draw');
+//     }
+// };
 
-circle.color = 'Yellow';
-circle.draw = function () {};
+// circle.color = 'Yellow';
+// circle.draw = function () {};
 
 // We can even delete properties
 
-delete circle.color;
+// delete circle.color;
+//
+// console.log(circle);
 
-console.log(circle);
+
+// Iterating the properties of an object with for...in
+
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('Draw');
+    }
+};
+
+for (let key in circle) {
+    console.log(key, circle[key]);
+}
+
+// With for...of we can iterate over the keys of an object
+
+for (let key of Object.keys(circle)) {
+    console.log(key);
+}
+
+// We can see the keys and its values as an array
+
+for (let entry of Object.entries(circle)) {
+    console.log(entry);
+}
+
+
+
