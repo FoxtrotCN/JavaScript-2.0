@@ -32,3 +32,15 @@ function createCircle (radius) {
 const circle1 = createCircle(1);
 console.log(circle1);
 
+
+// Constructor Function
+// This convention use the Pascal notation
+
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function () {
+        console.log('Draw');
+    }
+}
+
+const circle3 = new Circle(2);
