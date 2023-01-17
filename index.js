@@ -113,3 +113,27 @@ console.log(another); */
 
 const another = {...circle};
 console.log(another);
+
+// Exercises
+
+// 1 - Creates an object Address that has:
+// street
+// city
+// zipCode
+
+// and then make a function showAddress that takes address as a parameter
+// to show all the address
+
+const address = {
+    street: '2nd street',
+    city: 'London',
+    zipCode: 11507
+};
+
+function showAddress(address) {
+    for (let key in address) {
+        console.log(`${key}: ${address[key]}`);
+    }
+}
+
+showAddress(address);
