@@ -91,4 +91,12 @@ for (let entry of Object.entries(circle)) {
 }
 
 
+// Cloning an object (OLD WAY)
 
+const anotherCircle = {};
+
+for (let key in circle) {
+    anotherCircle[key] = circle[key];
+}
+
+console.log(anotherCircle);
