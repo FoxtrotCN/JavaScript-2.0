@@ -137,3 +137,41 @@ function showAddress(address) {
 }
 
 showAddress(address);
+
+
+// 2 - Factory and Constructor Function
+
+// This time we must implement these kind of functions to create a new object
+
+// Factory
+
+function createAddress(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    };
+}
+
+let address1 = createAddress('2nd Street', 'London', 11507);
+console.log(address1);
+
+for (let key in address1) {
+    console.log(key, address1[key]);
+}
+
+// Constructor
+
+function Address (street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+
+const address2 = new Address('2nd street', 'London', 11507);
+console.log(address2);
+
+for (let key in address2) {
+    console.log(key, address2[key]);
+}
+
