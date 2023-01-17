@@ -188,8 +188,11 @@ const address3 = new Address('2nd street', 'London', 11507);
 const address4 = new Address('2nd street', 'London', 11507);
 // console.log(address2);
 
+console.log(areEqual(address3, address4));
+console.log(areSame(address3, address4));
+
 function areEqual(address3, address4) {
-    let keyAddress3 = {};
+/*    let keyAddress3 = {};
     let keyAddress4 = {};
 
     for (let key in address3) {
@@ -200,16 +203,18 @@ function areEqual(address3, address4) {
         keyAddress4 = key;
     }
 
-    console.log((keyAddress3 === keyAddress4));
+    console.log((keyAddress3 === keyAddress4));*/
 
+    // Shorter way
 
+    return address3.city === address4.city &&
+        address3.street === address4.street &&
+        address3.zipCode === address4.zipCode
 }
-
-areEqual(address3, address4);
 
 function areSame(address3, address4) {
-    console.log((address3 === address4));
+    return address3 === address4;
 }
 
-areSame(address3, address4);
+
 
