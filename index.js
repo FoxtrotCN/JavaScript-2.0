@@ -1,6 +1,6 @@
 // Objects
 
-const circle = {
+/* const circle = {
     radius: 1,
     location: {
         x: 1,
@@ -10,7 +10,7 @@ const circle = {
     draw: function () {
         console.log('draw');
     }
-};
+}; */
 
 // Factory Function
 
@@ -44,3 +44,19 @@ function Circle(radius) {
 }
 
 const circle3 = new Circle(2);
+
+
+// The dynamic nature of objects
+
+const circle = {
+    radius: 1
+};
+
+circle.color = 'Yellow';
+circle.draw = function () {};
+
+// We can even delete properties
+
+delete circle.color;
+
+console.log(circle);
