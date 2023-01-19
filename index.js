@@ -217,4 +217,28 @@ function areSame(address3, address4) {
 }
 
 
+// 4- Blog spot object
+
+// title
+// body
+// author
+// views
+// comments
+//    (author, body)
+// isLive
+
+
+const post = {
+    title: 'The python essentials',
+    body: 'iwfhbwuiheibjivwueruisvsv',
+    author: 'Sr. Nandito',
+    views: 1234567,
+    comments: [
+        {body: 'eghdehdhj', author: 'el jeirel'},
+        {body: 'efgidifa', author: 'el jeirel 2'}
+    ],
+    isLive: true
+};
+
+console.log(post);
 
