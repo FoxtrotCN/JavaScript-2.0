@@ -242,3 +242,23 @@ const post = {
 
 console.log(post);
 
+
+
+let post2 = new Post('a', 'b','c');
+post2.views = 1;
+post2.comments = {
+    body: 'isuhsjafh', author: 'jdfjshui'
+}
+post2.isLive = true;
+console.log(post2);
+
+
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+}
+
