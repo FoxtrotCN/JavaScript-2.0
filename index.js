@@ -14,17 +14,30 @@ function arrayFromRange(min, max) {
 }
 
 // Implementing the includes method without implementing it
-let numbers2 = [1, 2, 3]
+// let numbers2 = [1, 2, 3]
+//
+// const array = includes(numbers2, 3);
+//
+// console.log(array);
+//
+// function includes(array, searchElement) {
+//
+//     for (let element of array)
+//         if (element === searchElement)
+//             return true;
+//     return false;
+//
+// }
 
-const array = includes(numbers2, 3);
+const numbers3 = [1, 2, 3, 4, 5];
+const excluded = except(numbers3, [1]);
+console.log(excluded);
 
-console.log(array);
 
-function includes(array, searchElement) {
-
+function except(array, excluded) {
+    const output = [];
     for (let element of array)
-        if (element === searchElement)
-            return true;
-    return false;
-
+        if (!excluded.includes(element))
+            output.push(element);
+    return output;
 }
