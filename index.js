@@ -56,3 +56,8 @@ const course = courses.findIndex(function (course) {
 });
 
 console.log(course);
+
+// Arrow Functions ES6
+
+const courseArrowFunction = courses.find(course => course.name === 'b'); // arrow function () => {}
+console.log(courseArrowFunction);
