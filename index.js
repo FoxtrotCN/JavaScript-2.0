@@ -61,3 +61,23 @@ console.log(course);
 
 const courseArrowFunction = courses.find(course => course.name === 'b'); // arrow function () => {}
 console.log(courseArrowFunction);
+
+// Removing elements from an array
+
+
+const letters = ['a', 'b', 'c', 'z', 'y', 'v'];
+
+// We can remove elements of an array as well as we add
+console.log(letters);
+// End pop()
+letters.pop();
+console.log(letters);
+
+// Beginning
+letters.shift();
+console.log(letters);
+
+// Middle
+letters.splice(0, 2);
+console.log(letters);
+
