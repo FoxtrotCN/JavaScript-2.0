@@ -1,26 +1,19 @@
 // Arrays
 
 
-// Joining Elements
+// Testing the elements in an array
 
-const numbers = [1, 2, 3, 1, 2, 5, 6, 4];
-const joined = numbers.join(',');
-console.log(joined);
+const numbers = [1, 2, 3, 1, 2, 5, 6, 4, -10];
 
+// every() or some()
 
-// Assume you are building an url slug
+const allPositive = numbers.every(value => {
+    return value >= 0;
+});
 
-const message = 'This is my first Message';
-const messageParts = message.split(' ');
-console.log(messageParts);
+const atLeastOnePositive = numbers.some(value => {
+    return value >= 0;
+});
 
-const combinedMessage = messageParts.join('-');
-console.log(combinedMessage);
-
-// Sorting an array
-numbers.sort();
-console.log(numbers);
-
-// Reversing an array
-numbers.reverse();
-console.log(numbers);
+console.log(allPositive);
+console.log(atLeastOnePositive);
