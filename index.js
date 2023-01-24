@@ -17,3 +17,11 @@ const atLeastOnePositive = numbers.some(value => {
 
 console.log(allPositive);
 console.log(atLeastOnePositive);
+
+// Filtering the elements in an array filter()
+
+const filtered = numbers.filter(value => {
+    return value >= 0;
+});
+
+console.log(filtered);
