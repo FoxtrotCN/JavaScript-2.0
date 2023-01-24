@@ -31,3 +31,28 @@ console.log(numbers.lastIndexOf(3)); // Showing the last occurrence of an elemen
                                     // if no elements, it returns -1
 console.log(numbers.includes(0)); // Returns true or false if the given index exist.
 
+
+// Finding reference types (objects)
+
+const courses = [
+    {id: 1, name: 'b'},
+    {id: 2, name: 'c'},
+];
+
+// We can use the find or findIndex() method
+
+const course1 = courses.find(function (course) {
+    return course.id === 1; // or
+    // return course.name === 'b';
+});
+
+console.log(course1);
+
+// using the findIndex works in the same way as the methods to find elements in an arrya
+// with primitive types.
+
+const course = courses.findIndex(function (course) {
+    return course.name === 'b';
+});
+
+console.log(course);
