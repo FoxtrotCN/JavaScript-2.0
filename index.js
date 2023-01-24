@@ -25,3 +25,11 @@ const filtered = numbers.filter(value => {
 });
 
 console.log(filtered);
+
+// Mapping an array
+
+const items = numbers.map(n => {
+    return {value: n};
+});
+
+console.log(items);
