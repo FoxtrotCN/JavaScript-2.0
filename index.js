@@ -90,3 +90,12 @@ const combined = [...first, ...second];
 console.log(combined);
 
 
+// Iterating an Array
+
+const numbersS = [1, 2, 3, 4, 5];
+
+for (let number of numbersS)
+    console.log(number);
+
+numbersS.forEach(number => console.log(number)); // This can take the index
+
