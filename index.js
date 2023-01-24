@@ -81,3 +81,12 @@ console.log(letters);
 letters.splice(0, 2);
 console.log(letters);
 
+// Combining arrays with spread operator
+
+const first = [1, 2, 3, 4];
+const second = [5, 6, 7];
+
+const combined = [...first, ...second];
+console.log(combined);
+
+
