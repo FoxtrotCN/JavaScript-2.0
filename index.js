@@ -61,3 +61,29 @@ function move(array, index, offset) {
     output.splice(position, 0, element);
     return output;
 }
+
+// Count Occurrences
+
+const numberS = [1, 2, 3, 4, 1];
+
+const search = countOccurrences(numberS, 1);
+
+console.log(search);
+
+function countOccurrences(array, searchElement) {
+    // let count = 0;
+    // for (let element of array)
+    //     if (element === searchElement)
+    //         count++;
+    // return count;
+
+    // With the reduce() method we can achieve the same result with
+    // less code:
+
+    console.log(numberS);
+    return array.reduce((accumulator, current) => {
+        const occurrence = (current === searchElement) ? 1 : 0;
+        console.log(accumulator, current, searchElement);
+        return accumulator + occurrence;
+    }, 0);
+}
