@@ -45,10 +45,10 @@ console.log(sum(1, 5, 6, 7, 8, 9, 100));*/
 // A better approach of the previous function
 // Working with the rest operator
 
-function sum(...prices) {
+/*function sum(...prices) {
     return prices.reduce((a, b) => a + b);
 }
-console.log(sum(1, 21, 3, 4, 5, 6));
+console.log(sum(1, 21, 3, 4, 5, 6));*/
 
 // Let's assume we got a cart, and we need to calculate
 // the total of it and given a discount
@@ -168,3 +168,37 @@ const video = {
 };
 
 video.showTags();
+
+
+// Exercises
+
+// 1- Sum of arguments
+//
+// We must implement a function that takes x arguments
+// and return its sum. This time, sum must be => 10.
+//
+// The function must accept arrays as an arguments
+// and adding as well.
+//
+// We must validate if the array given is valid.
+
+// const addition = sum(1, 2, 3, 4);
+// console.log(addition);
+
+// function sum(array, ...numbers) {
+//     const copyOfArray = [...array];
+//     if (Array.isArray(array))
+//         for (let i = 0; i <= copyOfArray.length; i++)
+//
+//     return numbers.reduce((a, b) => a + b);
+// }
+
+const numbers = sum([1, 2, 3, 4]);
+console.log(numbers);
+
+function sum(...numbers) {
+    console.log(numbers);
+    if (numbers.length === 1 && Array.isArray(numbers[0]))
+        numbers = [...numbers[0]];
+    return numbers.reduce((a, b) => a + b);
+}
