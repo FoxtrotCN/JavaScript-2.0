@@ -76,6 +76,7 @@ console.log(interest(10000));
 
 // Getters and Setters
 
+/*
 const person = {
     firstName: 'Fer',
     lastName: 'Cedeno',
@@ -95,3 +96,42 @@ console.log(person.fullName);
 person.fullName = 'John Smith';
 
 console.log(person);
+*/
+
+
+// Try and Catch - Error handling
+
+const person = {
+    firstName: 'Fer',
+    lastName: 'Cedeno',
+    get fullName() {
+        return `${person.firstName} ${person.lastName}`;
+    },
+
+    set fullName(value) {
+        if (typeof value !== 'string')
+            throw new Error('Value must be a string.');
+
+        const parts = value.split(' ');
+        if (parts.length !== 2)
+            throw new Error('Please provide a name and a last name.');
+
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+console.log(person.fullName);
+try {
+    person.fullName = 'Fernando Cedeno';
+}
+
+catch (e) {
+    alert(e);
+}
+
+
+console.log(person);
+
+
+
