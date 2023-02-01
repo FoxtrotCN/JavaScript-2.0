@@ -134,4 +134,22 @@ catch (e) {
 console.log(person);
 
 
+// this
 
+// this keyword reference the object that is executing
+// the current function
+
+// method -> object
+// function -> global (window, global)
+
+const video = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags() {
+        this.tags.forEach(function (tag) {
+            console.log(this.title, tag);
+        }, this);
+    }
+};
+
+video.showTags();
