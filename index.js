@@ -15,3 +15,16 @@ const run = function () {
 let move = run;
 run();
 move();
+
+// Deference between them
+
+// With function declaration we can make the call to that function
+// just before we declare it.
+
+// With function expression we cannot do this because is like to
+// print in console a variable before its declaration. The result of this
+// will be a ReferenceError.
+
+// The reason behind we can call a function with declaration syntax is
+// called: Hoisting. This works by the JS engine executing the code.
+// Hoisting is the action of moving the functions to the top of the file.
