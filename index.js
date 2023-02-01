@@ -61,3 +61,14 @@ function cartSum(discount, ...prices) {
 }
 
 console.log(cartSum(0.15, 12, 15, 30, 25));
+
+// Default parameters
+
+// Let's assume we got a function to calculate
+// the interest for a loan
+
+function interest(principal, rate = 3.5, years = 5) {
+    return principal * rate / 100 * years;
+}
+
+console.log(interest(10000));
