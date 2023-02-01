@@ -193,3 +193,34 @@ function sum(...numbers) {
         numbers = [...numbers[0]];
     return numbers.reduce((a, b) => a + b);
 }
+
+// 2- Area of Circle
+
+const circle = {
+    pi: 3.14,
+    radius: 5,
+    get area() {
+        return this.pi * this.radius ** 2;
+    }
+};
+
+console.log(circle);
+
+circle.radius = 6;
+console.log(circle);
+
+console.log(circle.area);
+
+// Other Approach more accurate
+
+const circle1 = {
+    radius: 1,
+    get area() {
+        return Math.floor(Math.PI * this.radius * this.radius);
+    }
+}
+
+console.log(circle1);
+circle1.radius = 5;
+console.log(circle1);
+console.log(circle1.area);
