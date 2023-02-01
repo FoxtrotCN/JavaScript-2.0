@@ -72,3 +72,26 @@ function interest(principal, rate = 3.5, years = 5) {
 }
 
 console.log(interest(10000));
+
+
+// Getters and Setters
+
+const person = {
+    firstName: 'Fer',
+    lastName: 'Cedeno',
+    get fullName() {
+        return `${person.firstName} ${person.lastName}`;
+    },
+
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+console.log(person.fullName);
+
+person.fullName = 'John Smith';
+
+console.log(person);
