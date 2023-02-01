@@ -142,13 +142,28 @@ console.log(person);
 // method -> object
 // function -> global (window, global)
 
-const video = {
+/*const video = {
     title: 'a',
     tags: ['a', 'b', 'c'],
     showTags() {
         this.tags.forEach(function (tag) {
             console.log(this.title, tag);
         }, this);
+    }
+};
+
+video.showTags();*/
+
+
+// A better approach is working with arrow functions =>
+
+const video = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags() {
+        this.tags.forEach(tag => {
+            console.log(this.title, tag);
+        });
     }
 };
 
