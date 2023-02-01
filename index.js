@@ -28,3 +28,16 @@ move();
 // The reason behind we can call a function with declaration syntax is
 // called: Hoisting. This works by the JS engine executing the code.
 // Hoisting is the action of moving the functions to the top of the file.
+
+
+// Arguments
+
+function sum() {
+    console.log(arguments);
+    let total = 0;
+    for (let value of arguments)
+        total += value;
+    return total;
+}
+
+console.log(sum(1, 5, 6, 7, 8, 9, 100));
