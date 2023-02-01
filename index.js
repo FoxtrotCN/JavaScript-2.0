@@ -32,7 +32,7 @@ move();
 
 // Arguments
 
-function sum() {
+/*function sum() {
     console.log(arguments);
     let total = 0;
     for (let value of arguments)
@@ -40,4 +40,24 @@ function sum() {
     return total;
 }
 
-console.log(sum(1, 5, 6, 7, 8, 9, 100));
+console.log(sum(1, 5, 6, 7, 8, 9, 100));*/
+
+// A better approach of the previous function
+// Working with the rest operator
+
+function sum(...prices) {
+    return prices.reduce((a, b) => a + b);
+}
+console.log(sum(1, 21, 3, 4, 5, 6));
+
+// Let's assume we got a cart, and we need to calculate
+// the total of it and given a discount
+// We can do this
+
+function cartSum(discount, ...prices) {
+    const total = prices.reduce((a, b) => a + b);
+    console.log(total);
+    return Math.floor(total * (1 - discount));
+}
+
+console.log(cartSum(0.15, 12, 15, 30, 25));
