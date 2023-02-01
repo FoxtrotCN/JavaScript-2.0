@@ -182,19 +182,10 @@ video.showTags();
 //
 // We must validate if the array given is valid.
 
-// const addition = sum(1, 2, 3, 4);
-// console.log(addition);
 
-// function sum(array, ...numbers) {
-//     const copyOfArray = [...array];
-//     if (Array.isArray(array))
-//         for (let i = 0; i <= copyOfArray.length; i++)
-//
-//     return numbers.reduce((a, b) => a + b);
-// }
 
-const numbers = sum([1, 2, 3, 4]);
-console.log(numbers);
+const addition = sum([1, 2, 3, 4]);
+console.log(addition);
 
 function sum(...numbers) {
     console.log(numbers);
