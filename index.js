@@ -195,7 +195,7 @@ function sum(...numbers) {
 }
 
 // 2- Area of Circle
-
+const pi = 3.14
 const circle = {
     pi: 3.14,
     radius: 5,
@@ -205,10 +205,8 @@ const circle = {
 };
 
 console.log(circle);
-
 circle.radius = 6;
 console.log(circle);
-
 console.log(circle.area);
 
 // Other Approach more accurate
@@ -224,3 +222,28 @@ console.log(circle1);
 circle1.radius = 5;
 console.log(circle1);
 console.log(circle1.area);
+
+
+// 3- Error Handling
+
+const numbers = [1, 2, 3, 4, 1];
+
+try {
+
+    const search = countOccurrences(numbers, 1);
+    console.log(search);
+} catch (e) {
+    alert(e);
+}
+
+function countOccurrences(array, searchElement) {
+
+    if (!Array.isArray(array))
+        throw new Error('The first parameter must be a valid array.');
+
+    return array.reduce((accumulator, current) => {
+        const occurrence = (current === searchElement) ? 1 : 0;
+        console.log(accumulator, current, searchElement);
+        return accumulator + occurrence;
+    }, 0);
+}
